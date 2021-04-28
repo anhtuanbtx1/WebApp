@@ -35,7 +35,7 @@ namespace EFCore
 
             modelBuilder.Entity<VehicleType>(entity =>
             {
-                entity.ToTable("VehicleType");
+                entity.ToTable("Player");
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
 

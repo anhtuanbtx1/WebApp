@@ -15,7 +15,7 @@ namespace WebApplication3.Models
         public string Name { get; set; }
         [Display(Name = "Descreption", ResourceType = typeof(Resources.ResourceVehicleType))]
         public string Descreption { get; set; }
-
+        [Display(Name="Active",ResourceType =typeof(Resources.ResourceVehicleType))]
         public string Active { get; set; }
     }
 }

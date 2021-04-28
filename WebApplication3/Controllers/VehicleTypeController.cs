@@ -1,7 +1,6 @@
 ﻿using Domain.Entitites;
 using Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using PSafe.AM.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

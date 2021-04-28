@@ -61,6 +61,15 @@ namespace WebApplication3.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trạng thái.
+        /// </summary>
+        public static string Active {
+            get {
+                return ResourceManager.GetString("Active", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mô tả.
         /// </summary>
         public static string Descreption {
