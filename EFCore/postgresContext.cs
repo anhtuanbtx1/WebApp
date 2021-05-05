@@ -37,7 +37,7 @@ namespace EFCore
             {
                 entity.ToTable("Player");
 
-                entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.Property(e => e.Id).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Descreption).HasMaxLength(200);
 

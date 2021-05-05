@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "jrL7crsC8PUntGIQbTKxcVsAnMHclf3NTZVpkMcxQsx9VJg9HOXgWdNFnLeJ7AVSW7dfePHf10xVdwwB+TgM5A==",
+  "dgSpecHash": "TAPlVXdUkNptDgVFynZC6VkixnPpQEsnPLnsb+RJhMQD0PlKWyNIdCJMiSHb87oE7tvAK7exj9VfKR0A2XriKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AnhTuan\\source\\repos\\WebApplication3\\WebApplication3\\WebApplication3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AnhTuan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
@@ -165,7 +166,8 @@
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\AnhTuan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\toastr\\2.1.1\\toastr.2.1.1.nupkg.sha512"
   ],
   "logs": []
 }

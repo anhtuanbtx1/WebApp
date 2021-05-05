@@ -10,12 +10,14 @@
         "dependencies": {
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.5",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.5"
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.5",
+          "toastr": "2.1.1"
         },
         "runtime": {
           "EFCore.dll": {}
         }
       },
+      "jQuery/1.6.3": {},
       "Microsoft.EntityFrameworkCore/5.0.5": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "5.0.5",
@@ -204,6 +206,11 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
+      "toastr/2.1.1": {
+        "dependencies": {
+          "jQuery": "1.6.3"
+        }
+      },
       "Domain/1.0.0": {
         "runtime": {
           "Domain.dll": {}
@@ -216,6 +223,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "jQuery/1.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vb0p7+eRmc2evBCT9W7PCUupqWiDMi9/ofBHN99LraRzLY5jPKMeFzFYBoMgwA8TiwRoFDke5hiDDLsvae7qMg==",
+      "path": "jquery/1.6.3",
+      "hashPath": "jquery.1.6.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/5.0.5": {
       "type": "package",
@@ -349,6 +363,13 @@
       "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
       "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    },
+    "toastr/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h/688XvzYk1xVYn213ryU+HCElE4n/drYzAHJkAi9LsSUPS3EbI6wGlvCglBUt7i4h5iESgAVarYaigjQmVpqg==",
+      "path": "toastr/2.1.1",
+      "hashPath": "toastr.2.1.1.nupkg.sha512"
     },
     "Domain/1.0.0": {
       "type": "project",

@@ -13,11 +13,7 @@
             <div class="col-md-4">
                 <form asp-action="CreateSaveChange">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Id" class="control-label"></label>
-                        <input asp-for="Id" class="form-control" />
-                        <span asp-validation-for="Id" class="text-danger"></span>
-                    </div>
+                    
                     <div class="form-group">
                         <label asp-for="Name" class="control-label"></label>
                         <input asp-for="Name" class="form-control" />
@@ -55,6 +51,24 @@
         <script src="~/lib/toastr/toastr.js"></script>
         <script src="~/lib/toastr/toastr.min.js"></script>
     </environment>
+    @if (!string.IsNullOrEmpty(ViewBag.Value) && ViewBag.Type == "warning")
+    {
+        <script type="text/javascript">
+            toastr.warning('@ViewBag.Status', '@ViewBag.Value')
+        </script>
+    }
+    else if (!string.IsNullOrEmpty(ViewBag.Value) && ViewBag.Type == "error")
+    {
+        <script type="text/javascript">
+            toastr.error('@ViewBag.Status', '@ViewBag.Value')
+        </script>
+    }
+    else if (!string.IsNullOrEmpty(ViewBag.Value) && ViewBag.Type == "success")
+    {
+        <script type="text/javascript">
+            toastr.success('@ViewBag.Status', '@ViewBag.Value')
+        </script>
+    }
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     <script type="text/javascript">
         $(document).ready(function () {
@@ -87,7 +101,7 @@
                         extend: 'print',
                         customize: function (win) {
                             $(win.document.body).addClass('white-bg');
-                            $(win.document.body).css('font-size', '8px');
+                            $(win.document.body).css('font-size', '10px');
 
                             $(win.document.body).find('table')
                                 .addClass('compact')

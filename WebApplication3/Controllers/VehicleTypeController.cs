@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication3.Common;
 using WebApplication3.Models;
 
 namespace WebApplication3.Controllers
@@ -18,7 +19,11 @@ namespace WebApplication3.Controllers
         }
         public IActionResult Index()
         {
-            
+            StatusQuery Notification;
+            Notification = new StatusQuery("warning", "", "Vui lòng kiểm tra lại");
+            ViewBag.Status = Notification.Status;
+            ViewBag.Value = Notification.Value;
+            ViewBag.Type = Notification.Type;
             var _listVehicle = _vehicletypeRepository.GetAll();
             List<VehicleTypeModel> ListVehicleTypeModel = new List<VehicleTypeModel>();
 
@@ -49,24 +54,27 @@ namespace WebApplication3.Controllers
             return View(ListVehicleTypeModel);
         }
         public IActionResult Create()
-        {                              
+        {
+            
+            StatusQuery Notification;
+            Notification = TempDataHelper.Get<StatusQuery>(TempData, "Notification");
+            if (Notification != null)
+            {
+                ViewBag.Status = Notification.Status;
+                ViewBag.Value = Notification.Value;
+                ViewBag.Type = Notification.Type;
+            }
             return View();
         }
         public IActionResult CreateSaveChange(VehicleType vehicleType)
         {
-            string messages = "";
-            StatusQuery Notification; 
+          
             if(ModelState.IsValid)
-            {
-                messages = "product " + vehicleType.Name + " created successfully";
+            {                
                 try
                 {
                     _vehicletypeRepository.Insert(vehicleType);
-                    var statusInsert = _vehicletypeRepository.SaveChanges();
-                    Notification = new StatusQuery("warning", "", "Vui lòng kiểm tra lại");
-                    ViewBag.Status = Notification.Status;
-                    ViewBag.Value = Notification.Value;
-                    ViewBag.Type = Notification.Type;
+                    var statusInsert = _vehicletypeRepository.SaveChanges();                 
                 }
                 catch(Exception)
                 {
@@ -81,20 +89,36 @@ namespace WebApplication3.Controllers
         }
         public IActionResult Delete(int id)
         {
-            var _vehicle = _vehicletypeRepository.GetById(id);
+            var _vehicle = _vehicletypeRepository.GetById(id);       
             return View(_vehicle);
         }
         [HttpPost]
         public IActionResult DeleteConfirm(int id)
-        {          
-                var _vehicle = _vehicletypeRepository.GetById(id);
+        {
+            
+            var _vehicle = _vehicletypeRepository.GetById(id);    
                 _vehicletypeRepository.Delete(_vehicle);
-                var statusDelete = _vehicletypeRepository.SaveChanges();
-                return RedirectToAction("Index");
+                var statusDelete = _vehicletypeRepository.SaveChanges(); 
+                if(statusDelete > 0)
+            {
+                TempDataHelper.Put<StatusQuery>(TempData, "Notification", new StatusQuery("success", "", "Xoa thanh cong"));
+                return RedirectToAction("Create", "VehicleType");
+            }
+            
+            return RedirectToAction("Index");
         }
         public IActionResult Edit(int id)
         {
+            StatusQuery Notification;
             var _vehicle = _vehicletypeRepository.GetById(id);
+            if (_vehicle.Id == 2)
+            {
+                Notification = new StatusQuery("warning", "", "Chuc vu ton tai");
+                ViewBag.Status = Notification.Status;
+                ViewBag.Value = Notification.Value;
+                ViewBag.Type = Notification.Type;
+
+            }
             return View(_vehicle);
         }
         public IActionResult EditConfirm(VehicleType model)

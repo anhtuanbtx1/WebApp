@@ -47,15 +47,15 @@
                                         @Html.DisplayFor(modelItem => item.Name)
                                     </td>
                                     <td>
-                                        @Html.DisplayFor(modelItem => item.Descreption)
+                                        <img src="~/images/@item.Descreption" />
                                     </td>
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Active)
                                     </td>
                                     <td>
-                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary btn-xs" }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.Id },new {@class = "btn btn-danger btn-xs" })
                                     </td>
                                 </tr>
                             }
@@ -123,6 +123,8 @@
                         "sLast": "Cuối"
                     }
                 },
+                "sScrollY": false,
+                "sScrollX": false,
                 pageLength: 15,
                 dom: '<"html5buttons"B>lTfgitp',
                 buttons: [

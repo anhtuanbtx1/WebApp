@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "epO4KXB6pJknGAdCvRmm5iNBRntgcvDe3EipAUysFaiHrxWiO7LhEULv8d8rru6C9qN6vlmJo3c9foelQ6kxng==",
+  "dgSpecHash": "OyUYNZrpeaeE+3QZ2ReRUUHe0LaTsXsar9+cHI9Pg8tLR8Ak4MGdR5/SXOnVxAQefrfKxUIRKFVWjoJhN9feIg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AnhTuan\\source\\repos\\WebApplication3\\EFCore\\EFCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\jquery\\1.6.3\\jquery.1.6.3.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.5\\microsoft.entityframeworkcore.5.0.5.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
@@ -22,7 +23,8 @@
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\AnhTuan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
-    "C:\\Users\\AnhTuan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
+    "C:\\Users\\AnhTuan\\.nuget\\packages\\toastr\\2.1.1\\toastr.2.1.1.nupkg.sha512"
   ],
   "logs": []
 }

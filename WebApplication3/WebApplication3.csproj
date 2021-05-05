@@ -23,6 +23,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.5" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    <PackageReference Include="toastr" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,13 +39,21 @@
     <None Include="wwwroot\css\alt\adminlte.pages.min.css.map" />
     <None Include="wwwroot\css\alt\adminlte.plugins.css.map" />
     <None Include="wwwroot\css\alt\adminlte.plugins.min.css.map" />
+    <None Include="wwwroot\js\adminlte.js" />
+    <None Include="wwwroot\js\adminlte.js.map" />
+    <None Include="wwwroot\js\adminlte.min.js" />
+    <None Include="wwwroot\js\adminlte.min.js.map" />
     <None Include="wwwroot\js\black-list\security-black-list.js" />
+    <None Include="wwwroot\js\demo.js" />
     <None Include="wwwroot\js\frame-js.js" />
     <None Include="wwwroot\js\fullcalendar.min.js" />
     <None Include="wwwroot\js\human-banned-list\human-banned.js" />
     <None Include="wwwroot\js\jquery-ui.min.js" />
     <None Include="wwwroot\js\moment.min.js" />
     <None Include="wwwroot\js\multiselect.js" />
+    <None Include="wwwroot\js\pages\dashboard.js" />
+    <None Include="wwwroot\js\pages\dashboard2.js" />
+    <None Include="wwwroot\js\pages\dashboard3.js" />
     <None Include="wwwroot\js\script.js" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\js\skin.config.js" />

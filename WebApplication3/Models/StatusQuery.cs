@@ -11,7 +11,7 @@ namespace WebApplication3.Models
         {
 
         }
-        public StatusQuery(string status, string value, string type)
+        public StatusQuery(string type, string status, string value)
         {
             Status = status;
             Value = value;
